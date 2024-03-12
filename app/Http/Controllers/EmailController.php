@@ -19,13 +19,13 @@ class EmailController extends Controller
             'c_logo' => $c_data['c_logo'],
             'c_address' => $c_data['c_address'],
             'rname' => $request->name,
-           //  'mobile_no' => $mobile_no,
+            // 'mobile_no' => $mobile_no,
             'email' => $request->email,
            //  'location' => $location,
             'from' => $request->email,
             'message' => $request->message,
             'subject' => $request->subject,
-             'title' => 'Test Email From User',
+             'title' => 'Email From User',
         ];
         // Mail::send('mail.BusinessEnquiry', ['email_data1' => $email_data1], function ($message) use ($email_data1) {
         //     $message->to('singhjaggi77340@gmail.com')->subject($email_data1['subject']);

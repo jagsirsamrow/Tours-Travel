@@ -14,7 +14,7 @@ class CarsController extends Controller
     {
         $search = $request['search'] ?? "";
         if($search != ""){
-            $list = Car::select()->orderBy('created_at', 'ASC')->where('cars.name','LIKE',"%$search%")->orwhere('cars.model','LIKE',"%$search%")->get();
+            $list = Car::select()->orderBy('created_at', 'ASC')->where('cars.name','LIKE',"%$search%")->orwhere('cars.model','LIKE',"%$search%")->paginate(5);
 
         }
         else{

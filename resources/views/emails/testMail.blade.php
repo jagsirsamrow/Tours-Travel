@@ -5,6 +5,7 @@
 </head>
 <body>
     <h1>{{ $testMailData['title'] }}</h1>
-    <p>{{ $testMailData['message'] }}</p>
+    <p>
+        Message from {{$testMailData['rname']}} He is Saying "{{ $testMailData['message'] }}"</p>
 </body>
 </html>
