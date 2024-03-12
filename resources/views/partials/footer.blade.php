@@ -19,11 +19,11 @@
                              <p><i class="fa fa-envelope-open-o"></i> <span> {{$CompanyData->c_email}}</span> </p>
                              <div class="link-follow-footer">
                                  <ul class="footer-social-share">
-                                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                     <li><a href="https://twitter.com/JSamrow98982" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                     <li><a href="https://www.instagram.com/jagsir.samrow/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                     {{-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> --}}
+                                     <li><a href="https://www.facebook.com/jagsir.samrow" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                     <li><a href="https://www.linkedin.com/in/jagsir-singh-5292b2245"><i class="fa fa-linkedin"></i></a></li>
                                  </ul>
                              </div>
                          </div>
@@ -108,7 +108,7 @@
                  </div>
                  <div class="col-lg-6 col-md-5">
                     <div class="copy-right">
-                        <p>Design and Develop By <a href="#">Jagsir Samrow</a></p>
+                        <p>Design and Develop By <a href="https://www.linkedin.com/in/jagsir-singh-5292b2245" target="_blank">Jagsir Samrow</a></p>
                     </div>
                      {{-- <div class="payment">
                          <img src="{{asset('assets/images/icon/1.png')}}" alt="">

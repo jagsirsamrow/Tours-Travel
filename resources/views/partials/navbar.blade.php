@@ -32,12 +32,13 @@
                             <li><i class="fa fa-envelope-open-o"></i> yourmail@domain.com</li>
                         </ul> --}}
                         <ul class="link-top">
-                            <li><a href="#" title="twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" title="Rss"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#" title="Google"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/JSamrow98982"target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
+                            {{-- <li><a href="#" title="Rss"><i class="fa fa-rss"></i></a></li> --}}
+                            {{-- <li><a href="#" title="Google"><i class="fa fa-google-plus"></i></a></li> --}}
+                            <li><a href="https://www.facebook.com/jagsir.samrow" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/jagsir-singh-5292b2245"><i class="fa fa-linkedin"></i></a></li>
+
+                            <li><a href="https://www.instagram.com/jagsir.samrow/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>

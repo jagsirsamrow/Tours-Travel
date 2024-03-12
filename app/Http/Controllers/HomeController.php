@@ -24,12 +24,13 @@ class HomeController extends Controller
         $blogs=blog::select('blogs.id', 'blogs.name',  'short_description', 'blogs.banner', 'date', 'blog_categories.name as category')
         ->join('blog_categories', 'blogs.cat_id', 'blog_categories.id')
         ->orderBy('blogs.created_at', 'ASC')->limit(4)->get();
-        $packages =Package::select()->orderBy('created_at', 'ASC')->get();
+        $chdpackages =Package::select()->orderBy('created_at', 'ASC')->where('packages.from','=','Chandigarh')->get();
+        $delpackages =Package::select()->orderBy('created_at', 'ASC')->where('packages.from','=','Delhi')->get();
         $cars = car::select()->orderBy('created_at', 'ASC')->get();
         $lcars = car::select()->orderBy('created_at', 'ASC')->where('cars.type','=','1')->get();
         $data= Slider::select()->orderBy('created_at', 'ASC')->get();
         // dd($blogs);
-        return view('welcome',compact('data','cars','packages','lcars','blogs','testimonial'));
+        return view('welcome',compact('data','cars','chdpackages','delpackages','lcars','blogs','testimonial'));
     }
     Public function about(){
         $data= Team::select()->orderBy('created_at', 'ASC')->get();
@@ -120,24 +121,24 @@ class HomeController extends Controller
     }
     public function sendmail( Request $request){
      ////Owner mail Send
-     $c_data = Company::find(1);
-     $email_data1 = [
-         'name' => $c_data['name'],
-         'c_name' => $c_data['c_name'],
-         'to' => $c_data['c_email'],
-         'c_logo' => $c_data['c_logo'],
-         'c_address' => $c_data['c_address'],
-         'name' => $request->name,
-        //  'mobile_no' => $mobile_no,
-         'email' => $request->email,
-        //  'location' => $location,
-         'from' => $request->email,
-         'heading' => $request->message,
-         'subject' => $request->subject,
-     ];
-     Mail::send('mail.BusinessEnquiry', ['email_data1' => $email_data1], function ($message) use ($email_data1) {
-         $message->to('singhjaggi77340@gmail.com')->subject($email_data1['subject']);
-         $message->from($email_data1['from'], $email_data1['name']);
-     });
+    //  $c_data = Company::find(1);
+    //  $email_data1 = [
+    //      'name' => $c_data['name'],
+    //      'c_name' => $c_data['c_name'],
+    //      'to' => $c_data['c_email'],
+    //      'c_logo' => $c_data['c_logo'],
+    //      'c_address' => $c_data['c_address'],
+    //      'name' => $request->name,
+    //     //  'mobile_no' => $mobile_no,
+    //      'email' => $request->email,
+    //     //  'location' => $location,
+    //      'from' => $request->email,
+    //      'heading' => $request->message,
+    //      'subject' => $request->subject,
+    //  ];
+    //  Mail::send('mail.BusinessEnquiry', ['email_data1' => $email_data1], function ($message) use ($email_data1) {
+    //      $message->to('singhjaggi77340@gmail.com')->subject($email_data1['subject']);
+    //      $message->from($email_data1['from'], $email_data1['name']);
+    //  });
     }
 }

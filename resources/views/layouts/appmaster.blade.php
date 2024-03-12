@@ -337,6 +337,13 @@
                                     <span>Slider</span>
                                 </a>
                             </li>
+
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="{{route('admin.packages.index')}}">
+                                    <i data-feather="sliders"></i>
+                                    <span>Package</span>
+                                </a>
+                            </li>
                             <li class="sidebar-list">
                                 <a class="sidebar-link sidebar-title link-nav" href="{{route('admin.blogs.index')}}">
                                     <i data-feather="sliders"></i>
