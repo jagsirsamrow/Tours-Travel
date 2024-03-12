@@ -158,135 +158,16 @@
     </div>
 </div>
 <!-- Cars Area End -->
-        <!-- Banner area start -->
-        {{-- <div class="banner-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                        <!-- single-banner start -->
-                        <div class="single-banner mt--30">
-                            <a href="shop.html"><img src="{{ asset('assets/images/banner/1.jpg') }}" alt=""></a>
-                        </div>
-                        <!-- single-banner end -->
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <!-- single-banner start -->
-                        <div class="single-banner mt--30">
-                            <a href="shop.html"><img src="{{ asset('assets/images/banner/2.jpg') }}" alt=""></a>
-                        </div>
-                        <!-- single-banner end -->
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <!-- single-banner start -->
-                        <div class="single-banner mt--30">
-                            <a href="shop.html"><img src="{{ asset('assets/images/banner/3.jpg') }}" alt=""></a>
-                        </div>
-                        <!-- single-banner end -->
-                    </div>
-                </div>
-            </div>
-        </div> --}}
-        <!-- Banner area end -->
-
+       
         <!-- Product Area Start -->
-        <div class="product-area section-pt section-pb-70">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- section-title start -->
-                        <div class="section-title">
-                            <h2>New Arrivals Packages </h2>
-                            {{-- <p>Most Trendy 2018 Clother</p> --}}
-                        </div>
-                        <!-- section-title end -->
-                    </div>
-                </div>
-                <!-- product-wrapper start -->
-                <div class="product-wrapper">
-                    <div class="product-slider">
-                        {{-- <div class="col-12"> --}}
-     
-                            @foreach ($packages as $item )
-                            <!-- single-product-wrap start -->
-                            <div class="single-product-wrap">
-                               
-                                <div class="product-image">
-                                    <a href="{{route('allcabs',$item->id)}}"><img src="{{ asset('storage/'.$item->banner) }}"
-                                            alt=""></a>
-                                    <span class="label-product label-new"></span>
-                                    {{-- <span class="label-product label-sale">{{-7%}}</span> --}}
-                                    {{-- <div class="quick_view">
-                                        <a href="#" title="quick view" class="quick-view-btn" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                                    </div> --}}
-                                </div>
-                                <div class="product-content">
-                                    <h3><a href="product-details.html">{{$item->route_plan}}</a></h3>
-                                    <h3><a href="product-details.html">{{$item->type}}</a></h3>
-                                    <div class="price-box">
-                                        <span class="new-price"><i class="fa fa-rupee"></i>{{' '.$item->price}}</span>
-                                        {{-- <span class="old-price">$54.49</span> --}}
-                                    </div>
-                                    <div class="product-action">
-                                        <a href="{{route('allcabs',$item->id)}}">
-                                        <button class="add-to-cart" title="Add to cart"><i class="fa fa-plus"></i> Book Your Route Plan</button></a>
-                                        <div class="star_content">
-                                            <ul class="d-flex">
-                                                <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                <li><a class="star-o" href="#"><i class="fa fa-star-o"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-                            @endforeach
-                            
-                        {{-- </div> --}}
-                        
-                    </div>
-                </div>
-                <!-- product-wrapper end -->
-            </div>
-        </div>
-        <!-- Product Area End -->
-
-        <!-- Banner area start -->
-        {{-- <div class="banner-area-two">
-            <div class="container-fluid plr-40">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <!-- single-banner start -->
-                        <div class="single-banner-two mt--30">
-                            <a href="shop.html"><img src="{{ asset('assets/images/banner/bg4.jpg') }}"
-                                    alt=""></a>
-                        </div>
-                        <!-- single-banner end -->
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <!-- single-banner start -->
-                        <div class="single-banner-two mt--30">
-                            <a href="shop.html"><img src="{{ asset('assets/images/banner/bg3.jpg') }}"
-                                    alt=""></a>
-                        </div>
-                        <!-- single-banner end -->
-                    </div>
-                </div>
-            </div>
-        </div> --}}
-        <!-- Banner area end -->
-        <!-- Product Area Start -->
-    {{-- <div class="product-area section-ptb">
+    <div class="product-area section-ptb">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <!-- section-title start -->
                     <div class="section-title">
-                        <h2>New Arrivals </h2>
-                        <p>Most Trendy 2018 Clother</p>
+                        <h2>Popular Packages </h2>
+                        <p>Most Trendy Packages </p>
                     </div>
                     <!-- section-title end -->
                 </div>
@@ -299,11 +180,11 @@
                             <div class="col-lg-12">
                                 <!-- single-banner-three start -->
                                 <div class="single-banner-three">
-                                    <a href="#"><img src="assets/images/banner/bg9.jpg" alt=""></a>
+                                    <a href="#"><img src="{{asset('assets/images/packages/chnadigarh.jpg')}}" alt=""></a>
                                     <!-- banner-three-inner start -->
-                                    <div class="banner-three-inner">
+                                    {{-- <div class="banner-three-inner">
                                         <a href="#"><img src="assets/images/banner/hover_bg.png" alt=""></a>
-                                    </div>
+                                    </div> --}}
                                     <!-- banner-three-inner end -->
                                 </div>
                                 <!-- single-banner-three end -->
@@ -311,26 +192,28 @@
                         </div>
                         <!-- deals-product-active start -->
                         <div class="row deals-product-active">
+                            @foreach ($chdpackages as $item)
                             <div class="col-12">
                                 <div class="daily-deals-wrap">
                                     <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="product-details.html"><img src="assets/images/product/1.jpg" alt=""></a>
-                                            <span class="label-product label-new">new</span>
-                                            <span class="label-product label-sale">-7%</span>
+                                   
+                                    <div class="single-product-wrap"> <div class="product-image">
+                                            <a href="product-details.html"><img src="{{'storage/'.$item->banner}}" alt=""></a>
+                                            <span class="label-product label-new">{{$item->from}}</span>
+                                            {{-- <span class="label-product label-n">-7%</span> --}}
                                             <div class="quick_view">
                                                 <a href="#" title="quick view" class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h3><a href="product-details.html">Printed Summer Dress</a></h3>
+                                            <h3><a href="product-details.html">{{$item->route_plan}}</a></h3>
                                             <div class="price-box">
-                                                <span class="new-price">$51.27</span>
-                                                <span class="old-price">$54.49</span>
+                                                <span class="new-price">{{$item->type}}</span>
+                                                <span class="old-price"><i class="fa fa-rupee"></i>{{$item->price}}</span>
                                             </div>
                                             <div class="product-action">
-                                                <button class="add-to-cart" title="Add to cart"><i class="fa fa-plus"></i> Add to cart</button>
+                                                <a href="{{route('allcabs',$item->id)}}">
+                                                <button class="add-to-cart" title="Add to cart"><i class="fa fa-plus"></i> Book Your Route Plan</button></a>
                                                 <div class="star_content">
                                                     <ul class="d-flex">
                                                         <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
@@ -342,106 +225,44 @@
                                                 </div>
                                             </div>
                                         </div>
+                                       
                                     </div>
+                                  
                                     <!-- single-product-wrap end -->
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="daily-deals-wrap">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="product-details.html"><img src="assets/images/product/3.jpg" alt=""></a>
-                                            <span class="label-product label-new">new</span>
-                                            <span class="label-product label-sale">-20%</span>
-                                            <div class="quick_view">
-                                                <a href="#" title="quick view" class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h3><a href="product-details.html">Printed Dress1</a></h3>
-                                            <div class="price-box">
-                                                <span class="new-price">$72.10</span>
-                                                <span class="old-price">$67.27</span>
-                                            </div>
-                                            <div class="product-action">
-                                                <button class="add-to-cart" title="Add to cart"><i class="fa fa-plus"></i> Add to cart</button>
-                                                <div class="star_content">
-                                                    <ul class="d-flex">
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star-o" href="#"><i class="fa fa-star-o"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single-product-wrap end -->
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="daily-deals-wrap">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="product-details.html"><img src="assets/images/product/5.jpg" alt=""></a>
-                                            <span class="label-product label-new">new</span>
-                                            <span class="label-product label-sale">-9%</span>
-                                            <div class="quick_view">
-                                                <a href="#" title="quick view" class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h3><a href="product-details.html">New Look Material</a></h3>
-                                            <div class="price-box">
-                                                <span class="new-price">$51.27</span>
-                                                <span class="old-price">$54.49</span>
-                                            </div>
-                                            <div class="product-action">
-                                                <button class="add-to-cart" title="Add to cart"><i class="fa fa-plus"></i> Add to cart</button>
-                                                <div class="star_content">
-                                                    <ul class="d-flex">
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star-o" href="#"><i class="fa fa-star-o"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single-product-wrap end -->
-                                </div>
-                            </div>                        
+                           
+                            @endforeach         
                         </div>
                         <!-- deals-product-active end -->
                     </div>
                     <div class="col-lg-6">
                         <!-- deals-product-active start -->
                         <div class="row deals-product-active">
+                            @foreach ($delpackages as $item )
+                                
+                            
                             <div class="col-12">
                                 <div class="daily-deals-wrap">
                                     <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="product-details.html"><img src="assets/images/product/10.jpg" alt=""></a>
-                                            <span class="label-product label-new">new</span>
-                                            <span class="label-product label-sale">-7%</span>
+                                   
+                                    <div class="single-product-wrap"> <div class="product-image">
+                                            <a href="product-details.html"><img src="{{'storage/'.$item->banner}}" alt=""></a>
+                                            <span class="label-product label-new">{{$item->from}}</span>
+                                            {{-- <span class="label-product label-n">-7%</span> --}}
                                             <div class="quick_view">
                                                 <a href="#" title="quick view" class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h3><a href="product-details.html">Printed Summer Dress</a></h3>
+                                            <h3><a href="product-details.html">{{$item->route_plan}}</a></h3>
                                             <div class="price-box">
-                                                <span class="new-price">$51.27</span>
-                                                <span class="old-price">$54.49</span>
+                                                <span class="new-price">{{$item->type}}</span>
+                                                <span class="old-price"><i class="fa fa-rupee"></i>{{$item->price}}</span>
                                             </div>
                                             <div class="product-action">
-                                                <button class="add-to-cart" title="Add to cart"><i class="fa fa-plus"></i> Add to cart</button>
+                                                <a href="{{route('allcabs',$item->id)}}">
+                                                <button class="add-to-cart" title="Add to cart"><i class="fa fa-plus"></i> Book Your Route Plan</button></a>
                                                 <div class="star_content">
                                                     <ul class="d-flex">
                                                         <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
@@ -453,91 +274,26 @@
                                                 </div>
                                             </div>
                                         </div>
+                                       
                                     </div>
+                                  
                                     <!-- single-product-wrap end -->
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="daily-deals-wrap">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="product-details.html"><img src="assets/images/product/7.jpg" alt=""></a>
-                                            <span class="label-product label-new">new</span>
-                                            <span class="label-product label-sale">-20%</span>
-                                            <div class="quick_view">
-                                                <a href="#" title="quick view" class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h3><a href="product-details.html">Printed Dress1</a></h3>
-                                            <div class="price-box">
-                                                <span class="new-price">$72.10</span>
-                                                <span class="old-price">$67.27</span>
-                                            </div>
-                                            <div class="product-action">
-                                                <button class="add-to-cart" title="Add to cart"><i class="fa fa-plus"></i> Add to cart</button>
-                                                <div class="star_content">
-                                                    <ul class="d-flex">
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star-o" href="#"><i class="fa fa-star-o"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single-product-wrap end -->
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="daily-deals-wrap">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="product-details.html"><img src="assets/images/product/8.jpg" alt=""></a>
-                                            <span class="label-product label-new">new</span>
-                                            <span class="label-product label-sale">-9%</span>
-                                            <div class="quick_view">
-                                                <a href="#" title="quick view" class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h3><a href="product-details.html">New Look Material</a></h3>
-                                            <div class="price-box">
-                                                <span class="new-price">$51.27</span>
-                                                <span class="old-price">$54.49</span>
-                                            </div>
-                                            <div class="product-action">
-                                                <button class="add-to-cart" title="Add to cart"><i class="fa fa-plus"></i> Add to cart</button>
-                                                <div class="star_content">
-                                                    <ul class="d-flex">
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star" href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a class="star-o" href="#"><i class="fa fa-star-o"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single-product-wrap end -->
-                                </div>
-                            </div>                        
+                            @endforeach
+                            
+                                                   
                         </div>
                         <!-- deals-product-active end -->
                         <div class="row">
                             <div class="col-lg-12">
                                 <!-- single-banner-three start -->
                                 <div class="single-banner-three">
-                                    <a href="#"><img src="assets/images/banner/bg10.jpg" alt=""></a>
+                                    <a href="#"><img src="{{asset('assets/images/packages/Delhi.jpg')}}" alt=""></a>
                                     <!-- banner-three-inner start -->
-                                    <div class="banner-three-inner">
+                                    {{-- <div class="banner-three-inner">
                                         <a href="#"><img src="assets/images/banner/hover_bg.png" alt=""></a>
-                                    </div>
+                                    </div> --}}
                                     <!-- banner-three-inner end -->
                                 </div>
                                 <!-- single-banner-three end -->
@@ -548,7 +304,7 @@
             </div>
             <!-- product-wrapper end -->
         </div>
-    </div> --}}
+    </div>
     <!-- Product Area End -->
         <!-- Latest Blog Posts Area start -->
         <div class="latest-blog-post-area section-ptb">
