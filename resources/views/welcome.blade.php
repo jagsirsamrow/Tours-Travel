@@ -6,7 +6,6 @@
     <div class="container-box-inner">
         <!-- Hero Slider start -->
         <div class="hero-slider-box">
-
             <div class="hero-slider hero-slider-eight">
                 @foreach ($data as $key => $item)
                     <div class="single-slide" style="background-image: url({{ asset('storage/' . $item->banner) }})">
@@ -198,7 +197,7 @@
                                     <!-- single-product-wrap start -->
                                    
                                     <div class="single-product-wrap"> <div class="product-image">
-                                            <a href="product-details.html"><img src="{{'storage/'.$item->banner}}" alt=""></a>
+                                            <a href="{{route('allcabs',$item->id)}}"><img src="{{'storage/'.$item->banner}}" alt=""></a>
                                             <span class="label-product label-new">{{$item->from}}</span>
                                             {{-- <span class="label-product label-n">-7%</span> --}}
                                             <div class="quick_view">
@@ -206,7 +205,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h3><a href="product-details.html">{{$item->route_plan}}</a></h3>
+                                            <h3><a href="{{route('allcabs',$item->id)}}">{{$item->route_plan}}</a></h3>
                                             <div class="price-box">
                                                 <span class="new-price">{{$item->type}}</span>
                                                 <span class="old-price"><i class="fa fa-rupee"></i>{{$item->price}}</span>
@@ -247,7 +246,7 @@
                                     <!-- single-product-wrap start -->
                                    
                                     <div class="single-product-wrap"> <div class="product-image">
-                                            <a href="product-details.html"><img src="{{'storage/'.$item->banner}}" alt=""></a>
+                                            <a href="{{route('allcabs',$item->id)}}"><img src="{{'storage/'.$item->banner}}" alt=""></a>
                                             <span class="label-product label-new">{{$item->from}}</span>
                                             {{-- <span class="label-product label-n">-7%</span> --}}
                                             <div class="quick_view">
@@ -255,7 +254,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h3><a href="product-details.html">{{$item->route_plan}}</a></h3>
+                                            <h3><a href="{{route('allcabs',$item->id)}}">{{$item->route_plan}}</a></h3>
                                             <div class="price-box">
                                                 <span class="new-price">{{$item->type}}</span>
                                                 <span class="old-price"><i class="fa fa-rupee"></i>{{$item->price}}</span>

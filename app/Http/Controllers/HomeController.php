@@ -43,6 +43,10 @@ class HomeController extends Controller
         return view('allcabs',compact('data','package'));
         
     }
+    public function allpackages(){
+        $packages = Package::all();
+        return view('allpakages',compact('packages'));
+    }
     Public function whatsppmes($id,$name){
         // dd($name);
         $car=$name;

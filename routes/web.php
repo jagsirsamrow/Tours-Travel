@@ -42,6 +42,7 @@ Route::post('/send-email', [EmailController::class, 'index'])->name('send-email'
 Route::post('/send-message', [HomeController::class, 'sendmessgae'])->name('send-message');
 
 Route::get('/allcabs/{id}',[HomeController::class,'allcabs'])->name('allcabs');
+Route::get('/allpackages',[HomeController::class,'allpackages'])->name('allpackages');
 Route::get('/whatsppmes/{id}/{name}',[HomeController::class,'whatsppmes'])->name('whatsppmes');
 
 // Route::get('/admin', function () {
